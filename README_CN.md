@@ -46,7 +46,7 @@ Drive-KD 是一个面向**自动驾驶视觉语言模型（VLM）**的**多教�
 ### AGP（Asymmetric Gradient Projection）
 
 <p align="center">
-  <img src="docs/figs/AGP.jpg" alt="AGP" width="85%"/><br/>
+  <img src="docs/figs/AGP.jpg" alt="AGP" width="40%"/><br/>
   <em><b>AGP。</b> 第一阶段在每个能力内执行“主-从”的非对称投影并合并；第二阶段在能力之间进行随机顺序的两两投影，得到最终梯度方向。</em>
 </p>
 
@@ -134,25 +134,6 @@ Drive-KD 是一个面向**自动驾驶视觉语言模型（VLM）**的**多教�
 | Multi-teacher（G2） | 42.64 | 29.18 | 52.19 |
 | **我们的方案（单教师）** | **<u>43.13</u>** | **<u>34.32</u>** | **<u>52.97</u>** |
 | **我们的方案（多教师 + AGP）** | **<u>43.50</u>** | **<u>33.15</u>** | **<u>55.51</u>** |
-
----
-
-## 🖼️ 评估示例
-
-<p align="center">
-  <img src="docs/figs/perception_eval.jpg" width="100%"/><br/>
-  <em>感知评估示例。</em>
-</p>
-
-<p align="center">
-  <img src="docs/figs/reasoning_eval.jpg" width="100%"/><br/>
-  <em>推理评估示例。</em>
-</p>
-
-<p align="center">
-  <img src="docs/figs/planning_eval.jpg" width="100%"/><br/>
-  <em>规划评估示例。</em>
-</p>
 
 ---
 

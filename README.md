@@ -46,7 +46,7 @@ We decompose driving into a sequential triad—**perception → reasoning → pl
 ### Asymmetric Gradient Projection (AGP)
 
 <p align="center">
-  <img src="docs/figs/AGP.jpg" alt="AGP" width="85%"/><br/>
+  <img src="docs/figs/AGP.jpg" alt="AGP" width="40%"/><br/>
   <em><b>Asymmetric Gradient Projection (AGP).</b> Stage 1 uses an asymmetric anchor–follower projection within each capability and merges the resulting update. Stage 2 applies shuffled symmetric pairwise projections across capabilities to obtain the final gradient direction.</em>
 </p>
 
@@ -134,25 +134,6 @@ We decompose driving into a sequential triad—**perception → reasoning → pl
 | Multi-teacher (G2) | 42.64 | 29.18 | 52.19 |
 | **Ours (single-teacher)** | **<u>43.13</u>** | **<u>34.32</u>** | **<u>52.97</u>** |
 | **Ours (multi-teacher + AGP)** | **<u>43.50</u>** | **<u>33.15</u>** | **<u>55.51</u>** |
-
----
-
-## 🖼️ Evaluation Examples
-
-<p align="center">
-  <img src="docs/figs/perception_eval.jpg" width="100%"/><br/>
-  <em>Perception evaluation example.</em>
-</p>
-
-<p align="center">
-  <img src="docs/figs/reasoning_eval.jpg" width="100%"/><br/>
-  <em>Reasoning evaluation example.</em>
-</p>
-
-<p align="center">
-  <img src="docs/figs/planning_eval.jpg" width="100%"/><br/>
-  <em>Planning evaluation example.</em>
-</p>
 
 ---
 
