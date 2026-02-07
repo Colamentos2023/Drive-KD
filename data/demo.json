@@ -1,0 +1,134 @@
+[
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>What is the moving status of object <c1,CAM_FRONT,0.4678,0.6772>? Please select the correct answer from the following options: A. Going ahead. B. Turn left. C. Turn right."
+      },
+      {
+        "role": "assistant",
+        "content": "Final: {A. Going ahead.}  \nObject: black sedan  \nPosition & orientation: relative to ego front left, heading parallel to lane  \nEnvironment: clear visibility, lane markings visible  \nContextual evidence: the vehicle maintains a consistent position within the lane, and its alignment with the road and adjacent lane lines indicates no turn; the trajectory and lack of steering cues confirm it is Going ahead."
+      }
+    ],
+    "images": [
+      ".../100k/train/9afb9daf-81ca742d.jpg"
+    ],
+    "question_type": "perception"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image><image><image><image><image><image>What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision."
+      },
+      {
+        "role": "assistant",
+        "content": "- <c1,CAM_FRONT_LEFT,0.0955,0.7989>, black SUV, relative to ego: front-left\n- <c2,CAM_BACK_LEFT,0.6786,0.6916>, black sedan, relative to ego: rear-left\n- <c3,CAM_FRONT_RIGHT,0.7392,0.7481>, red circular sign with white bar and \"NO ENTRY\" text, relative to ego: right-front\n- <c4,CAM_FRONT,0.8441,0.8333>, white car, relative to ego: front-left\n- <c5,CAM_FRONT,0.8441,0.8333>, white bus, relative to ego: front-right\nIDs: <c1,CAM_FRONT_LEFT,0.0955,0.7989><c2,CAM_BACK_LEFT,0.6786,0.6916><c3,CAM_FRONT_RIGHT,0.7392,0.7481><c4,CAM_FRONT,0.8441,0.83"
+      }
+    ],
+    "images": [
+      ".../nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533279665104844.jpg",
+      ".../nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279665112460.jpg",
+      ".../nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533279665120339.jpg",
+      ".../nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533279665127893.jpg",
+      ".../nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533279665137525.jpg",
+      ".../nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533279665147423.jpg"
+    ],
+    "question_type": "perception"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image><image><image><image><image><image>What object should the ego vehicle notice first when the ego vehicle is getting to the next possible location? What is the state of the object that is first noticed by the ego vehicle and what action should the ego vehicle take? What object should the ego vehicle notice second when the ego vehicle is getting to the next possible location? What is the state of the object perceived by the ego vehicle as second and what action should the ego vehicle take? What object should the ego vehicle notice third? What is the state of the object perceived by the ego vehicle as third and what action should the ego vehicle take?"
+      },
+      {
+        "role": "assistant",
+        "content": "First: <c1,CAM_FRONT,4.32,0.85>, gray pickup truck; State: stationary; Ego: decelerate gradually until it comes to a stop  \nSecond: <c2,CAM_FRONT,7.96,0.91>, pedestrian in yellow jacket; State: going ahead; Ego: slow down and go ahead  \nThird: <c3,CAM_FRONT,1.62,0.75>, black SUV; State: stationary; Ego: decelerate gradually until it comes to a stop"
+      }
+    ],
+    "images": [
+      ".../nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-14-54-39-0400__CAM_FRONT_LEFT__1537297592854799.jpg",
+      ".../nuscenes/samples/CAM_FRONT/n008-2018-09-18-14-54-39-0400__CAM_FRONT__1537297592862404.jpg",
+      ".../nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-14-54-39-0400__CAM_FRONT_RIGHT__1537297592870482.jpg",
+      ".../nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-14-54-39-0400__CAM_BACK_LEFT__1537297592897405.jpg",
+      ".../nuscenes/samples/CAM_BACK/n008-2018-09-18-14-54-39-0400__CAM_BACK__1537297592887558.jpg",
+      ".../nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-14-54-39-0400__CAM_BACK_RIGHT__1537297592878113.jpg"
+    ],
+    "question_type": "reasoning"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image><image><image><image><image><image>Predict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is slightly steering to the right. The ego vehicle is driving with normal speed. B. The ego vehicle is going straight. The ego vehicle is driving fast. C. The ego vehicle is slightly steering to the right. The ego vehicle is driving slowly. D. The ego vehicle is going straight. The ego vehicle is driving very fast."
+      },
+      {
+        "role": "assistant",
+        "content": "Final: C. The ego vehicle is slightly steering to the right. The ego vehicle is driving slowly.  \nSupport: The ego vehicle is positioned within a lane marked by double yellow lines and white edge stripes, with the lane curving gently to the right in the distance. The vehicle’s orientation aligns with the road’s curvature, indicating a slight rightward steering adjustment. There is no visible motion blur or rapid displacement of surrounding objects, and the spacing between the ego vehicle and the preceding car suggests a low relative speed, consistent with slow driving."
+      }
+    ],
+    "images": [
+      ".../nuscenes/samples/CAM_FRONT_LEFT/n015-2018-09-25-11-10-38+0800__CAM_FRONT_LEFT__1537845336104844.jpg",
+      ".../nuscenes/samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845336112460.jpg",
+      ".../nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-09-25-11-10-38+0800__CAM_FRONT_RIGHT__1537845336120339.jpg",
+      ".../nuscenes/samples/CAM_BACK_RIGHT/n015-2018-09-25-11-10-38+0800__CAM_BACK_RIGHT__1537845336127893.jpg",
+      ".../nuscenes/samples/CAM_BACK/n015-2018-09-25-11-10-38+0800__CAM_BACK__1537845336137525.jpg",
+      ".../nuscenes/samples/CAM_BACK_LEFT/n015-2018-09-25-11-10-38+0800__CAM_BACK_LEFT__1537845336147423.jpg"
+    ],
+    "question_type": "reasoning"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>What actions could the ego vehicle take based on <c1,CAM_FRONT,0.1796,0.5630>? Why take this action and what's the probability?"
+      },
+      {
+        "role": "assistant",
+        "content": "Target: <c1,CAM_FRONT,0.1796,0.5630> (white van, [van]), relative to ego: ahead in the same lane.  \nAction: keep going at the same speed  \nReason: The white van is moving forward in the same lane with consistent spacing and no indication of slowing or lane change; no occlusion or obstruction is present, and the road is clear ahead.  \nProbability: High  \nFinal: keep going at the same speed to maintain safety and traffic flow"
+      }
+    ],
+    "images": [
+      ".../100k/train/97b65dd9-221a0f98.jpg"
+    ],
+    "question_type": "planning"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image><image><image><image><image><image>In this scenario, what are safe actions to take for the ego vehicle?"
+      },
+      {
+        "role": "assistant",
+        "content": "brake gently to a stop; the wet road surface and reduced visibility due to rain require careful deceleration, and the presence of a pedestrian crossing ahead and other vehicles in adjacent lanes necessitate a controlled stop to maintain safety."
+      }
+    ],
+    "images": [
+      ".../nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-14-54-39-0400__CAM_FRONT_LEFT__1537297533504799.jpg",
+      ".../nuscenes/samples/CAM_FRONT/n008-2018-09-18-14-54-39-0400__CAM_FRONT__1537297533512404.jpg",
+      ".../nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-14-54-39-0400__CAM_FRONT_RIGHT__1537297533520482.jpg",
+      ".../nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-14-54-39-0400__CAM_BACK_LEFT__1537297533547405.jpg",
+      ".../nuscenes/samples/CAM_BACK/n008-2018-09-18-14-54-39-0400__CAM_BACK__1537297533537558.jpg",
+      ".../nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-14-54-39-0400__CAM_BACK_RIGHT__1537297533528113.jpg"
+    ],
+    "question_type": "planning"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>What actions taken by the ego vehicle can lead to a collision with<c1,CAM_FRONT,0.3510,0.4570>"
+      },
+      {
+        "role": "assistant",
+        "content": "Collision with <c1,CAM_FRONT,0.3510,0.4570>:\n- Self-vehicle action: accelerating and going straight  \nReason: The ego vehicle is in the same lane as the black SUV directly ahead, with a short longitudinal gap and no visible brake lights. Accelerating straight would reduce the safety gap to zero, resulting in a rear-end collision due to low time-to-collision (TTC) and same-lane following conflict."
+      }
+    ],
+    "images": [
+      ".../100k/train/06cb522f-f1ff4334.jpg"
+    ],
+    "question_type": "planning"
+  }
+]
