@@ -56,6 +56,8 @@ We decompose driving into a sequential triad—**perception → reasoning → pl
 
 ### Table 1: Capability scores & deployment metrics
 
+<div align="center">
+
 <table>
 <thead>
 <tr>
@@ -97,7 +99,11 @@ We decompose driving into a sequential triad—**perception → reasoning → pl
 </tbody>
 </table>
 
+</div>
+
 ### Table 2: Distillation scaling across model sizes (InternVL3)
+
+<div align="center">
 
 | Teacher | Student | Perception | Reasoning | Planning | Avg. |
 |---:|---:|---:|---:|---:|---:|
@@ -108,19 +114,23 @@ We decompose driving into a sequential triad—**perception → reasoning → pl
 | 14B | 2B | 41.74 | 35.40 | 56.84 | 44.66 |
 | 38B | 2B | 42.87 | **<u>38.25</u>** | **<u>57.63</u>** | **<u>46.25</u>** |
 
+</div>
+
 ### Table 3: Distillation signals & attention variants (InternVL3-1B)
 
 > “--” indicates not applicable (the model is trained/evaluated on a single capability split only).
 
+<div align="center">
+
 | Setting / Variant | Perception | Reasoning | Planning |
 |---|---:|---:|---:|
-| **Objectives (single-capability protocol)** ||||
+| **Objectives (single-capability protocol)** |||| 
 | CE (SFT) | 40.86 | 29.05 | 45.63 |
 | CE + KL | 39.60 | 28.16 | 43.36 |
 | CE + Hidden (1) | 41.27 | -- | -- |
 | CE + Hidden (mid) | -- | 31.65 | -- |
 | CE + Hidden (penultimate) | -- | -- | 45.04 |
-| **Additional attention variants** ||||
+| **Additional attention variants** |||| 
 | CE + Full Attn (1) | 42.46 | -- | -- |
 | CE + A<sub>t-v</sub> (mid) | -- | 30.42 | -- |
 | CE + Full Attn (penultimate) | -- | -- | 51.47 |
@@ -128,12 +138,14 @@ We decompose driving into a sequential triad—**perception → reasoning → pl
 | CE + A<sub>t-v</sub> (1), cosine | 41.85 | -- | -- |
 | CE + Full Attn (mid), cosine | -- | 32.87 | -- |
 | CE + A<sub>t-v</sub> (penultimate), cosine | -- | -- | 51.76 |
-| **Multi-teacher + conflict handling** ||||
+| **Multi-teacher + conflict handling** |||| 
 | Multi-teacher (no projection) | 42.34 | 25.68 | 51.03 |
 | Multi-teacher (G1) | 42.96 | 25.49 | 46.99 |
 | Multi-teacher (G2) | 42.64 | 29.18 | 52.19 |
 | **Ours (single-teacher)** | **<u>43.13</u>** | **<u>34.32</u>** | **<u>52.97</u>** |
 | **Ours (multi-teacher + AGP)** | **<u>43.50</u>** | **<u>33.15</u>** | **<u>55.51</u>** |
+
+</div>
 
 ---
 
