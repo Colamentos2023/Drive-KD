@@ -147,7 +147,7 @@ Drive-KD 是一个面向**自动驾驶视觉语言模型（VLM）**的**多教�
 pip install torch torchvision transformers accelerate tqdm pillow
 ```
 
-### 2) 数据说明（重要）
+### 2) 数据说明
 
 本仓库包含 `data/demo.json`，仅用于展示**标注格式样例**。  
 **我们不提供原始图片**：请从官方渠道获取并自行整理路径：
